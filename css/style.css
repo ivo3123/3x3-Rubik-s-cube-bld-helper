@@ -1,0 +1,59 @@
+body {
+    background-color:rebeccapurple;
+}
+
+#scramble3x3 {
+    color: aqua;
+    font-size: 40px;
+    width: max-content;
+    margin: auto;
+}
+
+#cube3x3 {
+    border-collapse: separate;
+    margin: auto;
+}
+
+#topMostLine {
+    margin: 0px;
+    width: max-content;
+    margin: auto;
+    font-size: 30px;
+}
+
+#next, #last {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#next, #last.isActive {
+    color: orange;
+}
+
+#solutionEdges {
+    width: max-content;
+    margin: auto;
+    font-size: 30px;
+    color: gold;
+}
+
+#solutionCorners, #edgeInversions, #cornerInversions {
+    width: max-content;
+    margin: auto;
+    font-size: 30px;
+    color: gold;
+}
+
+.cell {
+    color: black;
+    font-size: 50px;
+    width: max-content;
+    margin: 0px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#storyEdges, #storyCorners {
+    color: deepskyblue;
+    font-size: 38px;
+}
