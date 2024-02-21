@@ -1,5 +1,5 @@
 body {
-    background-color:rebeccapurple;
+    background-color: rebeccapurple;
 }
 
 #scramble3x3 {
@@ -21,12 +21,14 @@ body {
     font-size: 30px;
 }
 
-#next, #last {
+#next,
+#last {
     text-decoration: underline;
     cursor: pointer;
 }
 
-#next, #last.isActive {
+#next,
+#last.isActive {
     color: orange;
 }
 
@@ -37,7 +39,9 @@ body {
     color: gold;
 }
 
-#solutionCorners, #edgeInversions, #cornerInversions {
+#solutionCorners,
+#edgeInversions,
+#cornerInversions {
     width: max-content;
     margin: auto;
     font-size: 30px;
@@ -51,9 +55,4 @@ body {
     margin: 0px;
     text-align: center;
     font-weight: bolder;
-}
-
-#storyEdges, #storyCorners {
-    color: deepskyblue;
-    font-size: 38px;
 }
