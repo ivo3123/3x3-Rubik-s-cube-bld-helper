@@ -1,16 +1,12 @@
 const puzzle = new cube3x3bld();
 
 function getLineOfEdgesSolution() {
-    const edgesSolution = puzzle.strigifySolutionEdges(
-        puzzle.getBldSolutionEdges(),
-    );
+    const edgesSolution = puzzle.strigifySolutionEdges(puzzle.getBldSolutionEdges());
     return "Solution for the edges: " + edgesSolution;
 }
 
 function getLineOfCornersSolution() {
-    const cornerSolution = puzzle.strigifySolutionCorners(
-        puzzle.getBldSolutionCorners(),
-    );
+    const cornerSolution = puzzle.strigifySolutionCorners(puzzle.getBldSolutionCorners());
     return "Solution for the corners: " + cornerSolution;
 }
 
@@ -32,10 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         update();
 
-        if (
-            document.getElementById("last").classList.contains("isActive") ==
-            false
-        ) {
+        if (document.getElementById("last").classList.contains("isActive") == false) {
             document.getElementById("last").classList.add("isActive");
         }
     });
@@ -62,10 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const newScrambleText = puzzle.strigifyScramble();
         document.getElementById("scramble3x3").innerHTML = newScrambleText;
 
-        document.getElementById("solutionEdges").innerHTML =
-            getLineOfEdgesSolution();
-        document.getElementById("solutionCorners").innerHTML =
-            getLineOfCornersSolution();
+        document.getElementById("solutionEdges").innerHTML = getLineOfEdgesSolution();
+        document.getElementById("solutionCorners").innerHTML = getLineOfCornersSolution();
     }
 });
 
@@ -79,10 +70,6 @@ function makePuzzleAppear() {
     puzzle.drawScheme();
     puzzle.doScramble();
 
-    document.write(
-        '<p id="solutionEdges">' + getLineOfEdgesSolution() + "</p>",
-    );
-    document.write(
-        '<p id="solutionCorners">' + getLineOfCornersSolution() + "</p>",
-    );
+    document.write('<p id="solutionEdges">' + getLineOfEdgesSolution() + "</p>");
+    document.write('<p id="solutionCorners">' + getLineOfCornersSolution() + "</p>");
 }
